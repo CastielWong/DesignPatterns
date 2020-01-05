@@ -1,9 +1,7 @@
 package Observer.push.dashboard;
 
-
 import Observer.push.component.Observer;
 import Observer.push.component.Subject;
-
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private float temperature;

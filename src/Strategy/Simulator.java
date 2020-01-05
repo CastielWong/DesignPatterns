@@ -1,7 +1,9 @@
 package Strategy;
 
-
-import Strategy.fly.FlyRocketPowered;
+import Strategy.behavior.fly.FlyRocketPowered;
+import Strategy.concrete.Duck;
+import Strategy.concrete.MallardDuck;
+import Strategy.concrete.ModelDuck;
 
 public class Simulator {
 

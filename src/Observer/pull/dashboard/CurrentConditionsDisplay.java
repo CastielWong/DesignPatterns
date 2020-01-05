@@ -1,11 +1,9 @@
 package Observer.pull.dashboard;
 
-
 import java.util.Observable;
 import java.util.Observer;
 
 import Observer.pull.WeatherData;
-
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private Observable observable;

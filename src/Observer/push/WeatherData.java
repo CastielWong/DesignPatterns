@@ -1,11 +1,9 @@
 package Observer.push;
 
-
 import Observer.push.component.Observer;
 import Observer.push.component.Subject;
 
 import java.util.ArrayList;
-
 
 public class WeatherData implements Subject {
     private ArrayList<Observer> observers;

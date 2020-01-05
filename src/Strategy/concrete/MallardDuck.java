@@ -1,9 +1,7 @@
-package Strategy;
+package Strategy.concrete;
 
-
-import Strategy.fly.FlyWithWings;
-import Strategy.quack.Quack;
-
+import Strategy.behavior.fly.FlyWithWings;
+import Strategy.behavior.quack.Quack;
 
 public class MallardDuck extends Duck {
 

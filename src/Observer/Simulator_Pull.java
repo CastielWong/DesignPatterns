@@ -1,11 +1,12 @@
-package Observer.pull;
+package Observer;
 
 
+import Observer.pull.WeatherData;
 import Observer.pull.dashboard.CurrentConditionsDisplay;
 import Observer.pull.dashboard.StatisticsDisplay;
 
 
-public class Simulator {
+public class Simulator_Pull {
 
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();

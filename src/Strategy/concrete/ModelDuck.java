@@ -1,8 +1,7 @@
-package Strategy;
+package Strategy.concrete;
 
-
-import Strategy.fly.FlyNoWay;
-import Strategy.quack.Quack;
+import Strategy.behavior.fly.FlyNoWay;
+import Strategy.behavior.quack.Quack;
 
 public class ModelDuck extends Duck {
 

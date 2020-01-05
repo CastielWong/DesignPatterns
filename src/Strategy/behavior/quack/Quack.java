@@ -1,5 +1,4 @@
-package Strategy.quack;
-
+package Strategy.behavior.quack;
 
 public class Quack implements QuackBehavior {
 

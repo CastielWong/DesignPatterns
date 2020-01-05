@@ -1,8 +1,6 @@
 package Observer.pull;
 
-
 import java.util.Observable;
-
 
 public class WeatherData extends Observable {
     private float temperature;
@@ -34,7 +32,4 @@ public class WeatherData extends Observable {
         this.pressure = pressure;
         measurementChanged();
     }
-
-
-
 }

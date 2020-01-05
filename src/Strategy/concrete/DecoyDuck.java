@@ -1,9 +1,7 @@
-package Strategy;
+package Strategy.concrete;
 
-
-import Strategy.fly.FlyNoWay;
-import Strategy.quack.MuteQuack;
-
+import Strategy.behavior.fly.FlyNoWay;
+import Strategy.behavior.quack.MuteQuack;
 
 public class DecoyDuck extends Duck {
 

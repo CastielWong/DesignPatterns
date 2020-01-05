@@ -1,9 +1,7 @@
-package Strategy;
+package Strategy.concrete;
 
-
-import Strategy.fly.FlyBehavior;
-import Strategy.quack.QuackBehavior;
-
+import Strategy.behavior.fly.FlyBehavior;
+import Strategy.behavior.quack.QuackBehavior;
 
 public abstract class Duck {
     protected FlyBehavior flyBehavior;

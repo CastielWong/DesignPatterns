@@ -1,10 +1,11 @@
-package Observer.push;
+package Observer;
 
 
+import Observer.push.WeatherData;
 import Observer.push.dashboard.CurrentConditionsDisplay;
 import Observer.push.dashboard.StatisticsDisplay;
 
-public class Simulator {
+public class Simulator_Push {
 
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
