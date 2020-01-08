@@ -1,16 +1,16 @@
 package Factory;
 
 
-import Factory.method.ChicagoStylePizzaStore;
-import Factory.method.NYStylePizzaStore;
-import Factory.method.PizzaStore;
-import Factory.method.model.Pizza;
+import Factory.factory_method.ChicagoPizzaStore;
+import Factory.factory_method.NYPizzaStore;
+import Factory.factory_method.PizzaStore;
+import Factory.factory_method.model.Pizza;
 
 public class Simulator_Method {
 
     public static void main(String[] args) {
-        PizzaStore nyStore = new NYStylePizzaStore();
-        PizzaStore chicagoStore = new ChicagoStylePizzaStore();
+        PizzaStore nyStore = new NYPizzaStore();
+        PizzaStore chicagoStore = new ChicagoPizzaStore();
 
         Pizza pizza;
 

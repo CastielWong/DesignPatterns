@@ -1,4 +1,4 @@
-package Factory.method.model;
+package Factory.factory_method.model;
 
 public class ChicagoStyleVeggiePizza extends Pizza {
 

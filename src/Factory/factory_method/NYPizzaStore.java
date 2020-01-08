@@ -1,11 +1,11 @@
-package Factory.method;
+package Factory.factory_method;
 
-import Factory.method.model.NYStyleCheesePizza;
-import Factory.method.model.NYStylePepperoniPizza;
-import Factory.method.model.NYStyleVeggiePizza;
-import Factory.method.model.Pizza;
+import Factory.factory_method.model.NYStyleCheesePizza;
+import Factory.factory_method.model.NYStylePepperoniPizza;
+import Factory.factory_method.model.NYStyleVeggiePizza;
+import Factory.factory_method.model.Pizza;
 
-public class NYStylePizzaStore extends PizzaStore {
+public class NYPizzaStore extends PizzaStore {
 
     @Override
     public Pizza createPizza(String item) {
