@@ -1,40 +1,83 @@
 
 This is the quick recap for UML knowledge.
 
+## Attribute
+- `-`: private
+- `+`: public
+- `#`: protected
+- `~`: package/default
+
+The name of the abstract class should be included in "<<>>" or in _italics_.
+
+
 ## Relationship
 
-A is depended on B:
+Basic relationships:
 
-![dependended](images/depended.png)
+- Inheritance: ![solid line with hollow arrow](images/lines/inheritance.png)
+    - a full line with hollow/open arrow
+    - the superclass is at the arrow end
+    - a class is the generalization of other classes
+    - example: Dog - Animal
+- Relization: ![dotted line with hollow arrow](images/lines/realization.png)
+    - a dashed line with hollow/open arrow
+    - the interface is at the arrow end
+    - a class is the definition of other classes
+    - example: Plane - Flyable
+- Association: ![solid line](images/lines/association.png)
+    - a full line without arrow 
+    - a full line with an empty arrow is also association
+    - a dashed line with an empty arrow is dependency (weaker, transient relationship)
+    - a class is associated/depended with other class
+    - example: Car - Road
+- Aggregation: ![solid line with hollow diamond](images/lines/aggregation.png)
+    - a full line with hollow/open diamond
+    - the aggregation is at the diamond end
+    - a class is a container or collection of other classes
+    - example: Employee - Company
+- Composition: ![solid line with solid diamond](images/lines/composition.png)
+    - a full line with solid/closed diamond
+    - the composition is at the diamond end
+    - a class is a whole with other classes
+    - example: Door - House
 
 
-A is associated with B:
+Illustrations:
 
-![associated](images/associated.png)
+- B is the aggregation of A:
+    
+    ![aggregation](images/aggregation.png)
 
+- B is the composition of A:
+    
+    ![composition](images/composition.png)
 
-A is the aggregation of B:
+- B is the generalization of A: 
+    
+    ![specialization/generalization](images/generalization.png)
 
-![aggregation](images/aggregation.png)
+- C is association with A and B:
+    
+    ![association](images/association.png)
 
+- A is depended on B:
 
-A is the composition of Bs
+    ![dependended](images/depended.png)
 
-![composition](images/composition.png)
+- A is associated with B:
 
+    ![associated](images/associated.png)
 
-A is the generalization of B:
+### Multiplicity
 
-![generalization](images/generalization.png)
-
-
-C is association with A and B:
-
-![association](images/association.png)
-
+- 0..1: zero to one (optional)
+- n: specific number
+- 0..*: zero to many
+- 1..*: one to many
+- m..n: specific number range
 
 
 ## Reference
+- Lucidchart - Class Diagram Tutorial: https://www.youtube.com/watch?v=UI6lqHOVHic
 - Class Diagrams: https://docs.microsoft.com/en-us/visualstudio/modeling/uml-class-diagrams-reference?view=vs-2015&redirectedfrom=MSDN
 - Structural Diagrams: https://dzone.com/refcardz/getting-started-uml?chapter=2
-- Lucidchart - Class Diagram Tutorial: https://www.youtube.com/watch?v=UI6lqHOVHic
