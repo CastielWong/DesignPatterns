@@ -5,6 +5,7 @@
     - [Observer](#observer)
         - [Push Mode](#push-mode)
         - [Pull Mode](#pull-mode)
+    - [Decorator](#decorator)
 - [Reference](#reference)
 
 
@@ -16,6 +17,7 @@ This repository is used to have a quick overview on those design patterns introd
 - Strive for loosely coupled designs between objects that interact.
 - Identify the aspects of your application that vary and separate them from what stays the same.
 - Program to an interface, not an implementation.
+- Classes should be open for extension, but closed for modification.
 
 
 # Patterns
@@ -52,6 +54,13 @@ Like the __Push__ mode, `WeatherData` would notify all observers when there is a
 Note that the code implemented in __Pull__ mode uses existing `Observer` and `Observable` from `java.util` library.
 
 ![Observer - pull](images/Observer/pull.png)
+
+
+## Decorator
+
+ The __Decorator__ Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+
+![Decorator](images/Decorator/overview.png)
 
 
 # Reference
