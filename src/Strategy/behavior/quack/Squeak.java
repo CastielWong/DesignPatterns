@@ -1,5 +1,7 @@
 package Strategy.behavior.quack;
 
+import Strategy.behavior.QuackBehavior;
+
 public class Squeak implements QuackBehavior {
 
     @Override
