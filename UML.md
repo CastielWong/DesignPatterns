@@ -14,28 +14,28 @@ The name of the abstract class should be included in "<<>>" or in _italics_.
 
 Basic relationships:
 
-- Inheritance: ![solid line with hollow arrow](images/lines/inheritance.png)
+- Inheritance: ![solid line with hollow arrow](images/UML/lines/inheritance.png)
     - a full line with hollow/open arrow
     - the superclass is at the arrow end
     - a class is the generalization of other classes
     - example: Dog - Animal
-- Relization: ![dotted line with hollow arrow](images/lines/realization.png)
+- Realization: ![dotted line with hollow arrow](images/UML/lines/realization.png)
     - a dashed line with hollow/open arrow
     - the interface is at the arrow end
     - a class is the definition of other classes
     - example: Plane - Flyable
-- Association: ![solid line](images/lines/association.png)
+- Association: ![solid line](images/UML/lines/association.png)
     - a full line without arrow 
     - a full line with an empty arrow is also association
     - a dashed line with an empty arrow is dependency (weaker, transient relationship)
     - a class is associated/depended with other class
     - example: Car - Road
-- Aggregation: ![solid line with hollow diamond](images/lines/aggregation.png)
+- Aggregation: ![solid line with hollow diamond](images/UML/lines/aggregation.png)
     - a full line with hollow/open diamond
     - the aggregation is at the diamond end
     - a class is a container or collection of other classes
     - example: Employee - Company
-- Composition: ![solid line with solid diamond](images/lines/composition.png)
+- Composition: ![solid line with solid diamond](images/UML/lines/composition.png)
     - a full line with solid/closed diamond
     - the composition is at the diamond end
     - a class is a whole with other classes
@@ -46,27 +46,27 @@ Illustrations:
 
 - B is the aggregation of A:
     
-    ![aggregation](images/aggregation.png)
+    ![aggregation](images/UML/aggregation.png)
 
 - B is the composition of A:
     
-    ![composition](images/composition.png)
+    ![composition](images/UML/composition.png)
 
 - B is the generalization of A: 
     
-    ![specialization/generalization](images/generalization.png)
+    ![specialization/generalization](images/UML/generalization.png)
 
 - C is association with A and B:
     
-    ![association](images/association.png)
+    ![association](images/UML/association.png)
 
 - A is depended on B:
 
-    ![dependended](images/depended.png)
+    ![dependended](images/UML/depended.png)
 
 - A is associated with B:
 
-    ![associated](images/associated.png)
+    ![associated](images/UML/associated.png)
 
 ### Multiplicity
 
