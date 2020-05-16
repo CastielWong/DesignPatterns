@@ -26,7 +26,7 @@ Basic relationships:
     - example: Plane - Flyable
 - Association: ![solid line](images/UML/lines/association.png)
     - a full line without arrow 
-    - a full line with an empty arrow is also association
+    - a full line with a solid or empty arrow is also association
     - a dashed line with an empty arrow is dependency (weaker, transient relationship)
     - a class is associated/depended with other class
     - example: Car - Road
@@ -79,5 +79,6 @@ Illustrations:
 
 ## Reference
 - Lucidchart - Class Diagram Tutorial: https://www.youtube.com/watch?v=UI6lqHOVHic
+- UML Class Diagram Relationships Explained with Examples: https://creately.com/blog/diagrams/class-diagram-relationships/
 - Class Diagrams: https://docs.microsoft.com/en-us/visualstudio/modeling/uml-class-diagrams-reference?view=vs-2015&redirectedfrom=MSDN
 - Structural Diagrams: https://dzone.com/refcardz/getting-started-uml?chapter=2

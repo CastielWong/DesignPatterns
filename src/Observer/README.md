@@ -10,6 +10,8 @@ We use `Observable` and `Observer` provided by `java.util` instead.
 
 
 ## Push vs Pull
-Note that the notified orders are different between Push and Pull mode due to the different implemntations. One of the disadvantage of `java.util.Observable` is that it's a class other than an interface, which constrains its reusage and flexibility.
+Note that the notified orders are different between Push and Pull mode due to the different implementations. One of the 
+disadvantage of `java.util.Observable` is that it's a class other than an interface, which constrains its reusage and 
+flexibility.
  
 

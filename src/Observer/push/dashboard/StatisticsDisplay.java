@@ -4,11 +4,11 @@ import Observer.push.component.Observer;
 import Observer.push.component.Subject;
 
 public class StatisticsDisplay implements Observer, DisplayElement {
+    private Subject weatherData;
     private float maxTemp = 0.0f;
     private float minTemp = 200;
     private float tempSum = 0.0f;
     private int numReadings;
-    private Subject weatherData;
 
     public StatisticsDisplay(Subject weatherData) {
         this.weatherData = weatherData;
@@ -34,7 +34,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     @Override
     public void display() {
         System.out.println(
-                String.format("Avg/Max/Min temperature = %s/%s/%s",
+                String.format("Statistics: Avg/Max/Min temperature = %s/%s/%s",
                         (tempSum / numReadings), maxTemp, minTemp)
         );
     }

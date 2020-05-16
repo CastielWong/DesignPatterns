@@ -6,19 +6,20 @@ import java.util.Observer;
 import Observer.pull.WeatherData;
 
 public class StatisticsDisplay implements Observer, DisplayElement {
-    private Observable observable;
+    private Observable weatherData;
     private float maxTemp = 0.0f;
     private float minTemp = 200;
     private float tempSum = 0.0f;
     private int numReadings;
 
-    public StatisticsDisplay(Observable observable) {
-        this.observable = observable;
-        this.observable.addObserver(this);
+    public StatisticsDisplay(Observable weatherData) {
+        this.weatherData = weatherData;
+        this.weatherData.addObserver(this);
     }
 
     @Override
     public void update(Observable obs, Object arg) {
+        // pull the data only when the obs is WeatherData
         if (obs instanceof WeatherData) {
             WeatherData weatherData = (WeatherData) obs;
 
@@ -41,7 +42,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     @Override
     public void display() {
         System.out.println(
-                String.format("Avg/Max/Min temperature = %s/%s/%s",
+                String.format("Statistics: Avg/Max/Min temperature = %s/%s/%s",
                         (tempSum / numReadings), maxTemp, minTemp)
         );
     }
