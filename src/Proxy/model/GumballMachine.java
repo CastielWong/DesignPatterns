@@ -12,8 +12,8 @@ public class GumballMachine extends UnicastRemoteObject implements GumballMachin
     private final static State SOLD = State.Sold;
 
     private State state = SOLD_OUT;
-    private String location = null;
-    private int count = 0;
+    private String location;
+    private int count;
 
     public GumballMachine(String location, int count) throws RemoteException {
         this.location = location;

@@ -18,6 +18,7 @@
     - [Iterator](#iterator)
     - [Composite](#composite)
     - [State](#state)
+    - [Proxy](#proxy)
 - [Reference](#reference)
 
 
@@ -230,6 +231,19 @@ Example Diagram:
 The sketch of pattern __State__ is:
 
 ![State](images/State/sketch.png)
+
+
+## Proxy
+
+__The Proxy Pattern__ provides a surrogate or placeholder for another object to control access to it.
+
+Example Diagram:
+
+![Proxy - overview](images/Proxy/overview.png)
+
+The sketch of pattern __Proxy__ is:
+
+![Proxy](images/Proxy/sketch.png)
 
 
 

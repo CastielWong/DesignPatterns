@@ -5,6 +5,7 @@ import Proxy.model.GumballMonitor;
 import java.rmi.Naming;
 
 public class Simulator_Monitor {
+
     public static void main(String[] args) {
         String[] location = {
                 "rmi://localhost/gumballmachine"
@@ -26,5 +27,4 @@ public class Simulator_Monitor {
             monitor[i].report();
         }
     }
-
 }

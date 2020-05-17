@@ -5,8 +5,9 @@ import Proxy.model.GumballMachine;
 import java.rmi.Naming;
 
 public class Simulator_Machine {
+
     public static void main(String[] args) {
-        GumballMachineRemote gumballMachine = null;
+        GumballMachineRemote gumballMachine;
         int count;
 
         if (args.length < 2) {
