@@ -13,6 +13,7 @@
     - [Singleton](#singleton)
     - [Command](#command)
     - [Adapter](#adapter)
+    - [Facade](#facade)
 - [Reference](#reference)
 
 
@@ -26,6 +27,7 @@ This repository is used to have a quick overview on those design patterns introd
 - Program to an interface, not an implementation.
 - Classes should be open for extension, but closed for modification.
 - Depend upon abstractions. Do not depend upon concrete classes.
+- Principle of Least Knowledge - talk only to your immediate friends.
 
 
 # Patterns
@@ -167,6 +169,14 @@ The sketch mapping of the example is as below:
 
 ![Adapter](images/Adapter/sketch.png)
 
+
+## Facade
+
+__The Facade Pattern__ provides a unified interface to a set of interfaces in a subsytem. Facade defines a higher-level interface that makes the subsystem easier to use.
+
+Example Diagram:
+
+![Facade - overview](images/Facade/overview.png)
 
 
 # Reference
