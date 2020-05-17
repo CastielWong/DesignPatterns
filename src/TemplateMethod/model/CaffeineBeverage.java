@@ -1,6 +1,7 @@
 package TemplateMethod.model;
 
 public abstract class CaffeineBeverage {
+
     public final void prepareRecipe() {
         boilWater();
         brew();

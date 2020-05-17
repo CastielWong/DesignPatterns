@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Coffee extends CaffeineBeverage {
+
     @Override
     public void brew() {
         System.out.println("Dripping Coffee through filter");

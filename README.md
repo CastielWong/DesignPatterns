@@ -14,6 +14,7 @@
     - [Command](#command)
     - [Adapter](#adapter)
     - [Facade](#facade)
+    - [TemplateMethod](#templatemethod)
 - [Reference](#reference)
 
 
@@ -177,6 +178,16 @@ __The Facade Pattern__ provides a unified interface to a set of interfaces in a 
 Example Diagram:
 
 ![Facade - overview](images/Facade/overview.png)
+
+
+## TemplateMethod
+
+__The Template Method Pattern__ defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
+
+Example Diagram:
+
+![TemplateMethod - overview](images/TemplateMethod/overview.png)
+
 
 
 # Reference

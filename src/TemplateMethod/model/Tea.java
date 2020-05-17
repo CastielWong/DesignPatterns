@@ -1,8 +1,7 @@
 package TemplateMethod.model;
 
-import java.io.BufferedReader;
-
 public class Tea extends CaffeineBeverage {
+
     @Override
     public void brew() {
         System.out.println("Steeping the tea");
