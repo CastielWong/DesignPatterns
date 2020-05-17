@@ -1,8 +1,10 @@
 package Factory.abstract_factory;
 
-import Factory.abstract_factory.model.base.CheesePizza;
+import Factory.abstract_factory.model.base.PizzaIngredientFactory;
 import Factory.abstract_factory.model.base.Pizza;
-import Factory.abstract_factory.model.base.VeggiePizza;
+import Factory.abstract_factory.model.concrete.CheesePizza;
+import Factory.abstract_factory.model.concrete.NYPizzaIngredientFactory;
+import Factory.abstract_factory.model.concrete.VeggiePizza;
 
 public class NYPizzaStore extends PizzaStore {
 
@@ -21,4 +23,5 @@ public class NYPizzaStore extends PizzaStore {
 
         return pizza;
     }
+
 }

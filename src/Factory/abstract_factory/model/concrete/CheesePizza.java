@@ -1,6 +1,7 @@
-package Factory.abstract_factory.model.base;
+package Factory.abstract_factory.model.concrete;
 
-import Factory.abstract_factory.PizzaIngredientFactory;
+import Factory.abstract_factory.model.base.PizzaIngredientFactory;
+import Factory.abstract_factory.model.base.Pizza;
 
 public class CheesePizza extends Pizza {
     private PizzaIngredientFactory ingredientFactory;
@@ -17,4 +18,5 @@ public class CheesePizza extends Pizza {
         sauce = ingredientFactory.createSauce();
         cheese = ingredientFactory.createCheese();
     }
+
 }

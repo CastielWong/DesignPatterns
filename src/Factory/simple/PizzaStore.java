@@ -19,6 +19,8 @@ public class PizzaStore {
 		pizza.cut();
 		pizza.box();
 
+		System.out.println("--------------------------------------------");
+
 		return pizza;
 	}
 

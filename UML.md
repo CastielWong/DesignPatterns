@@ -7,7 +7,11 @@ This is the quick recap for UML knowledge.
 - `#`: protected
 - `~`: package/default
 
-The name of the abstract class should be included in "<<>>" or in _italics_. The name of the abstract method should also be in _italics_.
+The name of the abstract class should be included in "<<>>" or in _italics_. The name of the abstract method should also be in _italics_. 
+
+For interface, "<< interface >>" should be shown and the name should be in _italics_ as well.
+
+Any method that is defined only, either abstract method or interface method, should be in _italics_.
 
 
 ## Relationship

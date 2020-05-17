@@ -1,14 +1,15 @@
-package Factory.abstract_factory;
+package Factory.abstract_factory.model.concrete;
 
+import Factory.abstract_factory.model.base.PizzaIngredientFactory;
 import Factory.abstract_factory.model.ingrdient.MarinaraSauce;
 import Factory.abstract_factory.model.ingrdient.ReggianoCheese;
-import Factory.abstract_factory.model.ingrdient.SlicedPepperoni;
 import Factory.abstract_factory.model.ingrdient.ThinCrustDough;
-import Factory.abstract_factory.model.ingrdient.type.*;
+import Factory.abstract_factory.model.ingrdient.type.Cheese;
+import Factory.abstract_factory.model.ingrdient.type.Dough;
+import Factory.abstract_factory.model.ingrdient.type.Sauce;
+import Factory.abstract_factory.model.ingrdient.type.Veggies;
 import Factory.abstract_factory.model.ingrdient.vegetable.Garlic;
 import Factory.abstract_factory.model.ingrdient.vegetable.Mushroom;
-import Factory.abstract_factory.model.ingrdient.vegetable.Onion;
-import Factory.abstract_factory.model.ingrdient.vegetable.RedPepper;
 
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 
@@ -28,19 +29,13 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
     }
 
     @Override
-    public Pepperoni createPepperoni() {
-        return new SlicedPepperoni();
-    }
-
-    @Override
     public Veggies[] createVeggies() {
-        Veggies veggies[] = {
+        Veggies[] veggies = {
                 new Garlic(),
-                new Onion(),
-                new Mushroom(),
-                new RedPepper()
+                new Mushroom()
         };
 
         return veggies;
     }
+
 }

@@ -1,11 +1,14 @@
 package Factory.abstract_factory;
 
-import Factory.abstract_factory.model.base.CheesePizza;
+import Factory.abstract_factory.model.base.PizzaIngredientFactory;
 import Factory.abstract_factory.model.base.Pizza;
-import Factory.abstract_factory.model.base.VeggiePizza;
+import Factory.abstract_factory.model.concrete.CheesePizza;
+import Factory.abstract_factory.model.concrete.ChicagoPizzaIngredientFactory;
+import Factory.abstract_factory.model.concrete.VeggiePizza;
 
 public class ChicagoPizzaStore extends PizzaStore {
 
+	@Override
 	protected Pizza createPizza(String item) {
 		Pizza pizza = null;
 		PizzaIngredientFactory ingredientFactory =
@@ -22,4 +25,5 @@ public class ChicagoPizzaStore extends PizzaStore {
 
 		return pizza;
 	}
+
 }

@@ -1,15 +1,15 @@
 package Factory.abstract_factory.model.base;
 
-
-import Factory.abstract_factory.model.ingrdient.type.*;
+import Factory.abstract_factory.model.ingrdient.type.Cheese;
+import Factory.abstract_factory.model.ingrdient.type.Dough;
+import Factory.abstract_factory.model.ingrdient.type.Sauce;
+import Factory.abstract_factory.model.ingrdient.type.Veggies;
 
 public abstract class Pizza {
-
     protected String name;
     protected Dough dough;
     protected Sauce sauce;
     protected Cheese cheese;
-    protected Pepperoni pepperoni;
     protected Veggies[] veggies;
 
     public abstract void prepare();
@@ -32,6 +32,38 @@ public abstract class Pizza {
 
     public String getName() {
         return this.name;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        result.append(name).append(" with ingredients: \n");
+        if (dough != null) {
+            result.append("- ");
+            result.append(dough);
+            result.append("\n");
+        }
+        if (sauce != null) {
+            result.append("- ");
+            result.append(sauce);
+            result.append("\n");
+        }
+        if (cheese != null) {
+            result.append("- ");
+            result.append(cheese);
+            result.append("\n");
+        }
+        if (veggies != null) {
+            for (int i = 0; i < veggies.length; i++) {
+                result.append("- ");
+                result.append(veggies[i]);
+                if (i < veggies.length-1) {
+                    result.append(", ");
+                }
+            }
+            result.append("\n");
+        }
+        return result.toString();
     }
 
 }

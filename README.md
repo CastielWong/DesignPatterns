@@ -6,6 +6,7 @@
         - [Push Mode](#push-mode)
         - [Pull Mode](#pull-mode)
     - [Decorator](#decorator)
+    - [Factory](#factory)
 - [Reference](#reference)
 
 
@@ -18,6 +19,7 @@ This repository is used to have a quick overview on those design patterns introd
 - Identify the aspects of your application that vary and separate them from what stays the same.
 - Program to an interface, not an implementation.
 - Classes should be open for extension, but closed for modification.
+- Depend upon abstractions. Do not depend upon concrete classes.
 
 
 # Patterns
@@ -45,6 +47,8 @@ For simplicity, the connection between `Subject` & `StatisticsDiplay` in _Push_ 
 
 In __Push__ mode, it's `WeatherData` to automatically __push__ notifications to all observers. Whenever there is a change, `WeatherData` would call each observer's `update()` method with its attributes to notify.
 
+Example Diagram:
+
 ![Observer - push](images/Observer/push.png)
 
 ### Pull Mode
@@ -53,6 +57,8 @@ Like the __Push__ mode, `WeatherData` would notify all observers when there is a
 
 Note that the code implemented in __Pull__ mode uses existing `Observer` and `Observable` from `java.util` library.
 
+Example Diagram:
+
 ![Observer - pull](images/Observer/pull.png)
 
 
@@ -60,7 +66,61 @@ Note that the code implemented in __Pull__ mode uses existing `Observer` and `Ob
 
  The __Decorator__ Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
+Example Diagram:
+
 ![Decorator](images/Decorator/overview.png)
+
+
+## Factory
+
+The __Factory Method__ Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+
+The __Abstract Factory__ Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+__Factory Method__ is not the only technique for adhering to the _Dependency Inversion Principle_, but it is one of the more powerful ones. The following guidelines can help you avoid OO designs that violate the _Dependency Inversion Principle_:
+
+- No variable should hold a reference to a concrete class
+- No class should derive from a concrete class
+- No method should override an implemented method of any of its base classes
+
+
+### Simple Factory
+
+Defining a simple factory as a static method is a common technique and is often called a static factory. Why use a static method? Because you don’t need to instantiate an object to make use of the create method. But remember it also has the disadvanage that you can’t subclass and change the behavior of the create method.
+
+Set `Pizza` to be abstract is because a pizza must be concrete, such as `CheesePizza`, `VeggiePizza`.
+
+Example Diagram:
+
+![Simple Factory](images/Factory/simple.png)
+
+### Factory Method
+
+The __Factory Method__ Pattern encapsulates object creation by letting subclasses decide what objects to create.
+
+For __Simple Factory__, there is one factory to `createPizza()`. However, it's concrete `PizzaStore`'s job to `createPizza()` when it comes to __Factor Method__.
+
+Example Diagram:
+
+![Factory Method - Overview](images/Factory/method_overview.png)
+
+How Factory Method is actually applied:
+
+![Factory Method - Detail](images/Factory/method_detail.png)
+
+The higher level diagram of the __Factory Method__.
+
+![Factory Method](images/Factory/method.png)
+
+### Abstract Factory
+
+Example Diagram:
+
+![Abstract Factory - Overview](images/Factory/abstract_overview.png)
+
+The higher level diagram of the __Abstract Factory__.
+
+![Abstract Factory](images/Factory/abstract.png)
 
 
 # Reference
