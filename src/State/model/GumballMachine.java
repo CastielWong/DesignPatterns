@@ -12,8 +12,8 @@ public class GumballMachine {
     private State hasQuarterState;
     private State soldState;
 
-    private State state = soldOutState;
-    private int count = 0;
+    private State state;
+    private int count;
 
     public GumballMachine(int numberGumballs) {
         this.soldOutState = new SoldOutState(this);
@@ -25,6 +25,7 @@ public class GumballMachine {
         if (numberGumballs > 0) {
             state = noQuarterState;
         }
+        state = soldOutState;
     }
 
     public State getSoldOutState() {
@@ -73,15 +74,15 @@ public class GumballMachine {
 
     @Override
     public String toString() {
-        StringBuffer result = new StringBuffer();
+        StringBuilder result = new StringBuilder();
         result.append("\nMighty Gumball, Inc.");
         result.append("\nJava-enabled Standing Gumball Model #2004");
-        result.append("\nInventory: " + count + " gumball");
+        result.append("\nInventory: ").append(count).append(" gumball");
         if (count != 1) {
             result.append("s");
         }
         result.append("\n");
-        result.append("Machine is " + state + "\n");
+        result.append("Machine is ").append(state).append("\n");
         return result.toString();
     }
 }

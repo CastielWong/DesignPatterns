@@ -3,6 +3,7 @@ package State;
 import State.model.GumballMachine;
 
 public class Simulator {
+
     public static void main(String[] args) {
         GumballMachine gumballMachine = new GumballMachine(5);
 
@@ -19,6 +20,5 @@ public class Simulator {
         gumballMachine.turnCrank();
 
         System.out.println(gumballMachine);
-
     }
 }

@@ -4,7 +4,7 @@ import State.definition.State;
 import State.model.GumballMachine;
 
 public class SoldOutState implements State {
-    GumballMachine gumballMachine;
+    private GumballMachine gumballMachine;
 
     public SoldOutState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;

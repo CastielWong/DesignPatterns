@@ -17,6 +17,7 @@
     - [TemplateMethod](#templatemethod)
     - [Iterator](#iterator)
     - [Composite](#composite)
+    - [State](#state)
 - [Reference](#reference)
 
 
@@ -216,6 +217,19 @@ Example Diagram:
 The sketch of pattern __Composite__ is:
 
 ![Composite](images/Composite/sketch.png)
+
+
+## State
+
+__The State Pattern__ allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+
+Example Diagram:
+
+![State - overview](images/State/overview.png)
+
+The sketch of pattern __State__ is:
+
+![State](images/State/sketch.png)
 
 
 
