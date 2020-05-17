@@ -7,6 +7,10 @@
         - [Pull Mode](#pull-mode)
     - [Decorator](#decorator)
     - [Factory](#factory)
+        - [Simple Factory](#simple-factory)
+        - [Factory Method](#factory-method)
+        - [Abstract Factory](#abstract-factory)
+    - [Singleton](#singleton)
 - [Reference](#reference)
 
 
@@ -83,7 +87,6 @@ __Factory Method__ is not the only technique for adhering to the _Dependency Inv
 - No class should derive from a concrete class
 - No method should override an implemented method of any of its base classes
 
-
 ### Simple Factory
 
 Defining a simple factory as a static method is a common technique and is often called a static factory. Why use a static method? Because you don’t need to instantiate an object to make use of the create method. But remember it also has the disadvanage that you can’t subclass and change the behavior of the create method.
@@ -121,6 +124,14 @@ Example Diagram:
 The higher level diagram of the __Abstract Factory__.
 
 ![Abstract Factory](images/Factory/abstract.png)
+
+
+## Singleton
+
+ The __Singleton__ Pattern ensures a class has only one instance, and provides a global point of access to it.
+
+![Singleton](images/Singleton/overview.png)
+
 
 
 # Reference
