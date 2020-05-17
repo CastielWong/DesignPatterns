@@ -16,6 +16,7 @@
     - [Facade](#facade)
     - [TemplateMethod](#templatemethod)
     - [Iterator](#iterator)
+    - [Composite](#composite)
 - [Reference](#reference)
 
 
@@ -37,7 +38,7 @@ This repository is used to have a quick overview on those design patterns introd
 
 ## Strategy
 
-__The Strategy Pattern__ defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+__The Strategy Pattern__ defines a family of algorithms, encapsulates each one, and makes them interchangeable. __Strategy__ lets the algorithm vary independently from clients that use it.
 
 Example Diagram:
 
@@ -75,7 +76,7 @@ Example Diagram:
 
 ## Decorator
 
-__The Decorator Pattern__ attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+__The Decorator Pattern__ attaches additional responsibilities to an object dynamically. __Decorator__ provides a flexible alternative to subclassing for extending functionality.
 
 Example Diagram:
 
@@ -159,7 +160,7 @@ The mapping of the simple remote control is as below:
 
 ## Adapter
 
-__The Adapter Pattern__ converts the interface of a class into another interface the clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
+__The Adapter Pattern__ converts the interface of a class into another interface the clients expect. __Adapter__ lets classes work together that couldn’t otherwise because of incompatible interfaces.
 
 Example Diagram:
 
@@ -175,7 +176,7 @@ The sketch mapping of the example is as below:
 
 ## Facade
 
-__The Facade Pattern__ provides a unified interface to a set of interfaces in a subsytem. Facade defines a higher-level interface that makes the subsystem easier to use.
+__The Facade Pattern__ provides a unified interface to a set of interfaces in a subsytem. __Facade__ defines a higher-level interface that makes the subsystem easier to use.
 
 Example Diagram:
 
@@ -184,7 +185,7 @@ Example Diagram:
 
 ## TemplateMethod
 
-__The Template Method Pattern__ defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
+__The Template Method Pattern__ defines the skeleton of an algorithm in a method, deferring some steps to subclasses. __Template Method__ lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
 
 Example Diagram:
 
@@ -202,6 +203,19 @@ Example Diagram:
 The sketch of pattern __Iterator__ is:
 
 ![Iterator](images/Iterator/sketch.png)
+
+
+## Composite
+
+__The Composite Pattern__ allows you to compose objects into tree structures to represent part-whole hierarchies. __Composite__ lets clients treat individual objects and compositions of objects uniformly.
+
+Example Diagram:
+
+![Composite - overview](images/Composite/overview.png)
+
+The sketch of pattern __Composite__ is:
+
+![Composite](images/Composite/sketch.png)
 
 
 

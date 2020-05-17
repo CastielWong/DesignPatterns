@@ -6,6 +6,7 @@ import Composite.model.MenuItem;
 import Composite.model.Waitress;
 
 public class Simulator {
+
     public static void main(String args[]) {
         MenuComponent pancakeHouseMenu =
                 new Menu("PANCAKE HOUSE MENU", "Breakfast");
@@ -25,22 +26,22 @@ public class Simulator {
         pancakeHouseMenu.add(new MenuItem(
                 "Regular Pancake Breakfast",
                 "Pancakes with fried eggs, sausage",
-                false,
-                2.99
+                2.99,
+                false
         ));
 
         dinerMenu.add(new MenuItem(
                 "Pasta",
                 "Spaghetti with Marinara Sauce, and a slice of sourdough bread",
-                true,
-                3.89
+                3.89,
+                true
         ));
 
         cafeMenu.add(new MenuItem(
                 "Soup of the day",
                 "A cup of the soup of the day, with a side salad",
-                false,
-                3.69
+                3.69,
+                false
         ));
 
         dinerMenu.add(dessertMenu);
@@ -48,8 +49,8 @@ public class Simulator {
         dessertMenu.add(new MenuItem(
                 "Apple Pie",
                 "Apple pie with flakey crust, topped with vanilla ice cream",
-                true,
-                1.59
+                1.59,
+                true
         ));
 
         Waitress waitress = new Waitress(allMenus);

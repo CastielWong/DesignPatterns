@@ -3,14 +3,14 @@ package Composite.model;
 public class MenuItem extends MenuComponent {
     private String name;
     private String description;
-    private boolean vegetarian;
     private double price;
+    private boolean vegetarian;
 
-    public MenuItem(String name, String description, boolean vegetarian, double price) {
+    public MenuItem(String name, String description, double price, boolean vegetarian) {
         this.name = name;
         this.description = description;
-        this.vegetarian = vegetarian;
         this.price = price;
+        this.vegetarian = vegetarian;
     }
 
     @Override
@@ -24,13 +24,13 @@ public class MenuItem extends MenuComponent {
     }
 
     @Override
-    public boolean isVegetarian() {
-        return vegetarian;
+    public double getPrice() {
+        return price;
     }
 
     @Override
-    public double getPrice() {
-        return price;
+    public boolean isVegetarian() {
+        return vegetarian;
     }
 
     @Override

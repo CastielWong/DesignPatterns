@@ -1,10 +1,9 @@
 package Composite.model;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Menu extends MenuComponent {
-    private ArrayList menuComponents = new ArrayList();
+    private ArrayList<MenuComponent> menuComponents = new ArrayList<MenuComponent>();
     private String name;
     private String description;
 
@@ -25,7 +24,7 @@ public class Menu extends MenuComponent {
 
     @Override
     public MenuComponent getChild(int i) {
-        return (MenuComponent) menuComponents.get(i);
+        return menuComponents.get(i);
     }
 
     @Override
@@ -44,11 +43,8 @@ public class Menu extends MenuComponent {
         System.out.println(", " + this.getDescription());
         System.out.println("--------------------------");
 
-        Iterator iterator = menuComponents.iterator();
-        while (iterator.hasNext()) {
-            MenuComponent menuComponent = (MenuComponent) iterator.next();
+        for (MenuComponent menuComponent : menuComponents) {
             menuComponent.print();
         }
     }
-
 }
