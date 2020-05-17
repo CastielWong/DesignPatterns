@@ -6,6 +6,7 @@ import Adapter.model.TurkeyAdapter;
 import Adapter.model.WildTurkey;
 
 public class Simulator {
+
     public static void main(String[] args) {
         MallardDuck duck = new MallardDuck();
 

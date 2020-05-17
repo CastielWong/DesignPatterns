@@ -12,6 +12,7 @@
         - [Abstract Factory](#abstract-factory)
     - [Singleton](#singleton)
     - [Command](#command)
+    - [Adapter](#adapter)
 - [Reference](#reference)
 
 
@@ -149,6 +150,22 @@ The mapping of the simple remote control is as below:
 - Receiver: `Light`
 
 ![Command](images/Command/sketch.png)
+
+
+## Adapter
+
+__The Adapter Pattern__ converts the interface of a class into another interface the clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
+
+Example Diagram:
+
+![Adapter - overview](images/Adapter/overview.png)
+
+The sketch mapping of the example is as below:
+- Target: `Duck`
+- Adapter: `TurkeyAdapter`
+- Adaptee: `WildTurkey`
+
+![Adapter](images/Adapter/sketch.png)
 
 
 
