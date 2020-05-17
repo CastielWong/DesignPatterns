@@ -1,7 +1,7 @@
 package Command;
 
-import Command.component.Command;
 import Command.component.NoCommand;
+import Command.definition.Command;
 
 public class RemoteControl {
     private Command[] onCommands;

@@ -11,6 +11,7 @@
         - [Factory Method](#factory-method)
         - [Abstract Factory](#abstract-factory)
     - [Singleton](#singleton)
+    - [Command](#command)
 - [Reference](#reference)
 
 
@@ -30,20 +31,20 @@ This repository is used to have a quick overview on those design patterns introd
 
 ## Strategy
 
-The __Strategy__ Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+__The Strategy Pattern__ defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
 Example Diagram:
 
-![strategy overview](images/Strategy/overview.png)
+![Strategy - overview](images/Strategy/overview.png)
 
 How Strategy is actually applied:
 
-![strategy detail](images/Strategy/detail.png)
+![Strategy - detail](images/Strategy/detail.png)
 
 
 ## Observer
 
-The __Observer__ Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
+__The Observer Pattern__ defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
 For simplicity, the connection between `Subject` & `StatisticsDiplay` in _Push_ mode, and connection between `Observable` & `StatisticsDiplay` in _Pull_ mode is not drawn.
 
@@ -68,7 +69,7 @@ Example Diagram:
 
 ## Decorator
 
- The __Decorator__ Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+__The Decorator Pattern__ attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
 Example Diagram:
 
@@ -77,9 +78,9 @@ Example Diagram:
 
 ## Factory
 
-The __Factory Method__ Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+__The Factory Method Pattern__ defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 
-The __Abstract Factory__ Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+__The Abstract Factory Pattern__ provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 __Factory Method__ is not the only technique for adhering to the _Dependency Inversion Principle_, but it is one of the more powerful ones. The following guidelines can help you avoid OO designs that violate the _Dependency Inversion Principle_:
 
@@ -99,17 +100,17 @@ Example Diagram:
 
 ### Factory Method
 
-The __Factory Method__ Pattern encapsulates object creation by letting subclasses decide what objects to create.
+__The Factory Method Pattern__ encapsulates object creation by letting subclasses decide what objects to create.
 
 For __Simple Factory__, there is one factory to `createPizza()`. However, it's concrete `PizzaStore`'s job to `createPizza()` when it comes to __Factor Method__.
 
 Example Diagram:
 
-![Factory Method - Overview](images/Factory/method_overview.png)
+![Factory Method - overview](images/Factory/method_overview.png)
 
 How Factory Method is actually applied:
 
-![Factory Method - Detail](images/Factory/method_detail.png)
+![Factory Method - detail](images/Factory/method_detail.png)
 
 The higher level diagram of the __Factory Method__.
 
@@ -119,7 +120,7 @@ The higher level diagram of the __Factory Method__.
 
 Example Diagram:
 
-![Abstract Factory - Overview](images/Factory/abstract_overview.png)
+![Abstract Factory - overview](images/Factory/abstract_overview.png)
 
 The higher level diagram of the __Abstract Factory__.
 
@@ -131,6 +132,23 @@ The higher level diagram of the __Abstract Factory__.
  The __Singleton__ Pattern ensures a class has only one instance, and provides a global point of access to it.
 
 ![Singleton](images/Singleton/overview.png)
+
+
+## Command
+
+__The Command Pattern__ encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queue or log requests, and support undoable operations.
+
+Example Diagram:
+
+![Command - overview](images/Command/overview.png)
+
+The mapping of the simple remote control is as below:
+- Invoker: `SimpleRemoteControl`
+- Command: `Command`
+- ConcreteCommand: `LightOnCommand`
+- Receiver: `Light`
+
+![Command](images/Command/sketch.png)
 
 
 

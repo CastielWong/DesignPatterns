@@ -1,6 +1,7 @@
 package Command;
 
 import Command.component.*;
+import Command.definition.Command;
 import Command.model.CeilingFan;
 import Command.model.Light;
 import Command.model.Stereo;

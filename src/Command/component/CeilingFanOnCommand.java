@@ -1,5 +1,6 @@
 package Command.component;
 
+import Command.definition.Command;
 import Command.model.CeilingFan;
 
 public class CeilingFanOnCommand implements Command {

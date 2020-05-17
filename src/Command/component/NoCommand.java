@@ -1,5 +1,7 @@
 package Command.component;
 
+import Command.definition.Command;
+
 public class NoCommand implements Command {
 
     @Override

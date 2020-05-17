@@ -1,4 +1,4 @@
-package Command.component;
+package Command.definition;
 
 public interface Command {
     public void execute();
