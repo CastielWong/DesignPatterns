@@ -5,12 +5,12 @@ import Iterator.definition.Iterator;
 public class NullIterator implements Iterator {
 
     @Override
-    public Object next() {
-        return null;
+    public boolean hasNext() {
+        return false;
     }
 
     @Override
-    public boolean hasNext() {
-        return false;
+    public Object next() {
+        return null;
     }
 }

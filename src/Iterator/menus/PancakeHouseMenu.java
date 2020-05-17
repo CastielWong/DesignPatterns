@@ -1,16 +1,17 @@
-package Iterator.implementation;
+package Iterator.menus;
 
 import Iterator.definition.Iterator;
 import Iterator.definition.Menu;
+import Iterator.implementation.PancakeHouseMenuIterator;
 import Iterator.model.MenuItem;
 
 import java.util.ArrayList;
 
 public class PancakeHouseMenu implements Menu {
-    private ArrayList menuItems;
+    private ArrayList<MenuItem> menuItems;
 
     public PancakeHouseMenu() {
-        menuItems = new ArrayList();
+        menuItems = new ArrayList<MenuItem>();
 
         addItem("K&B's Pancake Breakfast",
                 "Pancakes with scrambled eggs, and toast",
@@ -40,10 +41,6 @@ public class PancakeHouseMenu implements Menu {
         MenuItem menuItem = new MenuItem(name, description, price, vegetarian);
         menuItems.add(menuItem);
     }
-
-//    public ArrayList getMenuItems() {
-//        return menuItems;
-//    }
 
     @Override
     public Iterator createIterator() {

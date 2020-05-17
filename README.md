@@ -15,6 +15,7 @@
     - [Adapter](#adapter)
     - [Facade](#facade)
     - [TemplateMethod](#templatemethod)
+    - [Iterator](#iterator)
 - [Reference](#reference)
 
 
@@ -29,6 +30,7 @@ This repository is used to have a quick overview on those design patterns introd
 - Classes should be open for extension, but closed for modification.
 - Depend upon abstractions. Do not depend upon concrete classes.
 - Principle of Least Knowledge - talk only to your immediate friends.
+- A class should have only one reason to change.
 
 
 # Patterns
@@ -187,6 +189,19 @@ __The Template Method Pattern__ defines the skeleton of an algorithm in a method
 Example Diagram:
 
 ![TemplateMethod - overview](images/TemplateMethod/overview.png)
+
+
+## Iterator
+
+__The Iterator Pattern__ provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+
+Example Diagram:
+
+![Iterator - overview](images/Iterator/overview.png)
+
+The sketch of pattern __Iterator__ is:
+
+![Iterator](images/Iterator/sketch.png)
 
 
 

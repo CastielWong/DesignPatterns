@@ -1,22 +1,16 @@
 package Iterator.implementation;
 
 import Iterator.definition.Iterator;
+import Iterator.model.MenuItem;
 
 import java.util.ArrayList;
 
 public class PancakeHouseMenuIterator implements Iterator {
-    private ArrayList items;
+    private ArrayList<MenuItem> items;
     private int position = 0;
 
-    public PancakeHouseMenuIterator(ArrayList items) {
+    public PancakeHouseMenuIterator(ArrayList<MenuItem> items) {
         this.items = items;
-    }
-
-    @Override
-    public Object next() {
-        Object object = items.get(position);
-        position = position + 1;
-        return object;
     }
 
     @Override
@@ -25,5 +19,12 @@ public class PancakeHouseMenuIterator implements Iterator {
             return false;
         }
         return true;
+    }
+
+    @Override
+    public Object next() {
+        Object object = items.get(position);
+        position = position + 1;
+        return object;
     }
 }

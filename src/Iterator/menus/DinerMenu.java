@@ -1,12 +1,14 @@
-package Iterator.implementation;
+package Iterator.menus;
 
 import Iterator.definition.Iterator;
 import Iterator.definition.Menu;
+import Iterator.implementation.DinerMenuIterator;
 import Iterator.model.MenuItem;
 
 public class DinerMenu implements Menu {
     private static final int MAX_ITEMS = 6;
-    private int numberofItems = 0;
+    private int numberOfItems = 0;
+
     private MenuItem[] menuItems;
 
     public DinerMenu() {
@@ -39,16 +41,12 @@ public class DinerMenu implements Menu {
                         boolean vegetarian) {
         MenuItem menuItem = new MenuItem(name, description, price, vegetarian);
 
-        if (numberofItems >= MAX_ITEMS) {
+        if (numberOfItems >= MAX_ITEMS) {
             System.err.println("Sorry, menu is full! Can't add item to menu");
         } else {
-            menuItems[numberofItems] = menuItem;
-            numberofItems = numberofItems + 1;
+            menuItems[numberOfItems] = menuItem;
+            numberOfItems = numberOfItems + 1;
         }
-    }
-
-    public MenuItem[] getMenuItems() {
-        return menuItems;
     }
 
     @Override

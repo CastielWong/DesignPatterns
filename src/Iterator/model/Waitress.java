@@ -6,9 +6,9 @@ import Iterator.definition.Menu;
 import java.util.ArrayList;
 
 public class Waitress {
-    private ArrayList menus;
+    private ArrayList<Menu> menus;
 
-    public Waitress(ArrayList menus) {
+    public Waitress(ArrayList<Menu> menus) {
         this.menus = menus;
     }
 

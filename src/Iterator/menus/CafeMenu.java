@@ -1,13 +1,14 @@
-package Iterator.implementation;
+package Iterator.menus;
 
 import Iterator.definition.Iterator;
 import Iterator.definition.Menu;
+import Iterator.implementation.CafeMenuIterator;
 import Iterator.model.MenuItem;
 
 import java.util.Hashtable;
 
 public class CafeMenu implements Menu {
-    private Hashtable menuItems = new Hashtable();
+    private Hashtable<String, MenuItem> menuItems = new Hashtable<String, MenuItem>();
 
     public CafeMenu() {
         addItem("Veggie Burger and Air Fries",
@@ -30,10 +31,6 @@ public class CafeMenu implements Menu {
                         boolean vegetarian) {
         MenuItem menuItem = new MenuItem(name, description, price, vegetarian);
         menuItems.put(menuItem.getName(), menuItem);
-    }
-
-    public Hashtable getItems() {
-        return menuItems;
     }
 
     @Override

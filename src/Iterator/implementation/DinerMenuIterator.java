@@ -12,13 +12,6 @@ public class DinerMenuIterator implements Iterator {
     }
 
     @Override
-    public Object next() {
-        MenuItem menuItem = items[position];
-        position = position + 1;
-        return menuItem;
-    }
-
-    @Override
     public boolean hasNext() {
         if (position >= items.length || items[position] == null) {
             return false;
@@ -26,4 +19,10 @@ public class DinerMenuIterator implements Iterator {
         return true;
     }
 
+    @Override
+    public Object next() {
+        MenuItem menuItem = items[position];
+        position = position + 1;
+        return menuItem;
+    }
 }
