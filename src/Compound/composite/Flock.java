@@ -4,10 +4,13 @@ import Compound.observer.component.Observer;
 import Compound.strategy.behavior.Quackable;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Flock implements Quackable {
-    private ArrayList quackers = new ArrayList();
+    private ArrayList<Quackable> quackers = new ArrayList<Quackable>();
+
+    public Flock() {
+
+    }
 
     public void add(Quackable quacker) {
         quackers.add(quacker);
@@ -15,20 +18,14 @@ public class Flock implements Quackable {
 
     @Override
     public void quack() {
-        Iterator iterator = quackers.iterator();
-
-        while (iterator.hasNext()) {
-            Quackable quacker = (Quackable) iterator.next();
+        for (Quackable quacker : quackers) {
             quacker.quack();
         }
     }
 
     @Override
     public void registerObserver(Observer observer) {
-        Iterator iterator = quackers.iterator();
-
-        while (iterator.hasNext()) {
-            Quackable quacker = (Quackable) iterator.next();
+        for (Quackable quacker : quackers) {
             quacker.registerObserver(observer);
         }
     }

@@ -4,10 +4,9 @@ import Compound.observer.component.Observer;
 import Compound.observer.component.QuackObservable;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Observable implements QuackObservable {
-    private ArrayList observers = new ArrayList();
+    private ArrayList<Observer> observers = new ArrayList<Observer>();
     private QuackObservable duck;
 
     public Observable(QuackObservable duck) {
@@ -21,10 +20,7 @@ public class Observable implements QuackObservable {
 
     @Override
     public void notifyObservers() {
-        Iterator iterator = observers.iterator();
-
-        while (iterator.hasNext()) {
-            Observer observer = (Observer) iterator.next();
+        for (Observer observer : observers) {
             observer.update(duck);
         }
     }

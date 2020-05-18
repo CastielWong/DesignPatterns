@@ -3,7 +3,7 @@ package Proxy;
 import java.rmi.Naming;
 
 public class MyRemoteClient {
-    
+
     public static void main(String[] args) {
         new MyRemoteClient().go();
     }
