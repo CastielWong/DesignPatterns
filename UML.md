@@ -13,6 +13,8 @@ For interface, "<< interface >>" should be shown and the name should be in _ital
 
 Any method that is defined only, either abstract method or interface method, should be in _italics_.
 
+![classes](images/UML/classes.png)
+
 
 ## Relationship
 
