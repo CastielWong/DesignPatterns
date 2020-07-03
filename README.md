@@ -24,6 +24,15 @@
 
 This repository is used to have a quick overview on those design patterns introduced from the book __Head First Design Patterns__.
 
+Note that the diagram is created via [Draw.io](https://app.diagrams.net/). 
+- To export reusable SVG format, config the export:
+	- ZOOM: 100%
+	- Border Width: 0
+	- Include a copy of my diagram: check
+- To export the PNG diagram, config the export:
+	- ZOOM: 100%
+	- Border Width: 20
+
 # Design Principle
 
 - Favor composition over inheritance.
