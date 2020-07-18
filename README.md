@@ -24,6 +24,11 @@
 
 This repository is used to have a quick overview on those design patterns introduced from the book __Head First Design Patterns__.
 
+A __Pattern__ is a solution to a problem in a context:
+- The __context__ is the situaion in which the pattern applies. This should be a recurring situation.
+- The __problem__ refers to the goal you are trying to achieve in this context, but it also referes to any constraints that occur in the context.
+- Ths __solution__ is what you're after: a general design that anyone can apply which resolves the goal and set of constraints.
+
 Note that the diagram is created via [Draw.io](https://app.diagrams.net/). 
 - To export reusable SVG format, config the export:
 	- ZOOM: 100%
@@ -37,6 +42,7 @@ Note that the diagram is created via [Draw.io](https://app.diagrams.net/).
 
 - Favor composition over inheritance.
 - Strive for loosely coupled designs between objects that interact.
+
 - Identify the aspects of your application that vary and separate them from what stays the same.
 - Program to an interface, not an implementation.
 - Classes should be open for extension, but closed for modification.
