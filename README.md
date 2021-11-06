@@ -1,24 +1,24 @@
 
 - [Design Principle](#design-principle)
 - [Patterns](#patterns)
-    - [Strategy](#strategy)
-    - [Observer](#observer)
-        - [Push Mode](#push-mode)
-        - [Pull Mode](#pull-mode)
-    - [Decorator](#decorator)
-    - [Factory](#factory)
-        - [Simple Factory](#simple-factory)
-        - [Factory Method](#factory-method)
-        - [Abstract Factory](#abstract-factory)
-    - [Singleton](#singleton)
-    - [Command](#command)
-    - [Adapter](#adapter)
-    - [Facade](#facade)
-    - [TemplateMethod](#templatemethod)
-    - [Iterator](#iterator)
-    - [Composite](#composite)
-    - [State](#state)
-    - [Proxy](#proxy)
+  - [Strategy](#strategy)
+  - [Observer](#observer)
+    - [Push Mode](#push-mode)
+    - [Pull Mode](#pull-mode)
+  - [Decorator](#decorator)
+  - [Factory](#factory)
+    - [Simple Factory](#simple-factory)
+    - [Factory Method](#factory-method)
+    - [Abstract Factory](#abstract-factory)
+  - [Singleton](#singleton)
+  - [Command](#command)
+  - [Adapter](#adapter)
+  - [Facade](#facade)
+  - [TemplateMethod](#templatemethod)
+  - [Iterator](#iterator)
+  - [Composite](#composite)
+  - [State](#state)
+  - [Proxy](#proxy)
 - [Reference](#reference)
 
 
@@ -268,3 +268,4 @@ The sketch of pattern __Proxy__ is:
 - Book pdf: http://ce.sharif.edu/courses/98-99/2/ce484-1/resources/root/Design%20Patterns/Eric%20Freeman,%20Elisabeth%20Freeman,%20Kathy%20Sierra,%20Bert%20Bates-Head%20First%20Design%20Patterns%20-OReilly%20(2008).pdf
 - Design Patterns - Refactoring.Guru: https://refactoring.guru/design-patterns
 - 图说设计模式: https://design-patterns.readthedocs.io/zh_CN/latest/
+- Java Design Patterns: https://github.com/iluwatar/java-design-patterns
