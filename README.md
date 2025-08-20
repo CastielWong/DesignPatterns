@@ -269,3 +269,4 @@ The sketch of pattern __Proxy__ is:
 - Design Patterns - Refactoring.Guru: https://refactoring.guru/design-patterns
 - 图说设计模式: https://design-patterns.readthedocs.io/zh_CN/latest/
 - Java Design Patterns: https://github.com/iluwatar/java-design-patterns
+- Source Making: https://sourcemaking.com/
